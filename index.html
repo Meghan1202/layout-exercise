@@ -5,8 +5,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 * {
   box-sizing: border-box;
+}
+
+.container {
+  padding: 0;
 }
 
 body {
@@ -35,20 +40,10 @@ header {
   padding-left: 10px;
 }
 
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
 nav {
   flex: 1;
   background: #ccc;
   padding: 10px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
 }
 
 .right-col {
@@ -56,12 +51,20 @@ nav {
 }
 
 section {
-  display: flex;
-   flex-direction: column;
-   width: 30%;
-  background-color: rgb(238,238,238);
+   display: flex;
+  flex-direction: row;
   height: 100%;
   padding-left: 15px;
+}
+
+article {
+  padding: 10px;
+}
+
+.left-col {
+  width: 30%;
+  padding: 10px;
+  background-color: #ccc;
 }
 
 footer {
@@ -88,15 +91,16 @@ footer {
   <a href="#">Link</a>
   <a href="#">Link</a>
 </nav>
-<div class="container">
-  <section>
+
+  <section class="container">
+  <div class="left-col">
     <h3>About Me</h3>
     <p>Passion towards Computer Science is the key for my journey. 
       I love to solve problems and am highly inclined towards mathematical thinking and I feel that computer science is the only field which utilises mathematics in the most productive way possible enabling us to solve a plethora of problems. </p>
     <b><p>Photos of me:</p></b>
     <img id="" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/15964115/The_Verge_Wallpaper_030719_Preview.0.jpg" alt="Image not found" width="98%">
-    </section>
-  <div class="right-col">
+ </div>
+ <article class="right-col">
     <h3>Medium Article</h3>
      <b><p>Resnet architecture</p></b>
      <h3>Medium Article</h3>
@@ -105,8 +109,9 @@ footer {
      <b><p>Resnet architecture</p></b>
      <h3>Medium Article</h3>
      <b><p>Resnet architecture</p></b>
-  </div>
-</div>
+ </article>
+</section>
+
 <footer>
   <p> &#169; Meghan1202</p>
 </footer>
