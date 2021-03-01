@@ -29,7 +29,7 @@ header {
   background-color: rgb(41, 41, 41);
 }
 
-.nav-bar a {
+.nav-bar > a {
   text-decoration: none;
   color: white;
   padding-left: 10px;
@@ -41,8 +41,6 @@ section {
 }
 
 nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   background: #ccc;
   padding: 10px;
@@ -53,16 +51,19 @@ nav {
   flex-direction: row;
 }
 
-.left-col {
-  width: 30%;
+.right-col {
+  padding-left: 15px;
+}
+
+section {
+  display: flex;
+   flex-direction: column;
+   width: 30%;
   background-color: rgb(238,238,238);
   height: 100%;
   padding-left: 15px;
 }
 
-.right-col {
-  padding-left: 15px;
-}
 footer {
   background-color: #777;
   padding: 10px;
@@ -88,16 +89,22 @@ footer {
   <a href="#">Link</a>
 </nav>
 <div class="container">
-  <div class="left-col">
+  <section>
     <h3>About Me</h3>
     <p>Passion towards Computer Science is the key for my journey. 
       I love to solve problems and am highly inclined towards mathematical thinking and I feel that computer science is the only field which utilises mathematics in the most productive way possible enabling us to solve a plethora of problems. </p>
     <b><p>Photos of me:</p></b>
     <img id="" src="https://cdn.vox-cdn.com/uploads/chorus_asset/file/15964115/The_Verge_Wallpaper_030719_Preview.0.jpg" alt="Image not found" width="98%">
-  </div>
+    </section>
   <div class="right-col">
-    <h3>TITTLE HEADING</h3>
-     <b><p>Tittle description</p></b>
+    <h3>Medium Article</h3>
+     <b><p>Resnet architecture</p></b>
+     <h3>Medium Article</h3>
+     <b><p>Resnet architecture</p></b>
+     <h3>Medium Article</h3>
+     <b><p>Resnet architecture</p></b>
+     <h3>Medium Article</h3>
+     <b><p>Resnet architecture</p></b>
   </div>
 </div>
 <footer>
